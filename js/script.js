@@ -50,6 +50,12 @@ $(document).ready(function() {
 			  paginationSpeed : 400,
 			  singleItem:true
 		});
+    $(".typed").typed({
+        strings: ["Android ", "Web "],
+        typeSpeed: 65,
+        backSpeed: 65,
+        startDelay: 2000
+      });
 
 		//SmothScroll
 		$('a[href*=#]').click(function() {

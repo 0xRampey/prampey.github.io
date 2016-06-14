@@ -74,9 +74,9 @@ margin: auto;
 
 .h1_home{
 	font-size: 80px;
-	font-family: arvo;
-	font-weight: 300;
-	letter-spacing: 6px;
+	font-family: lato;
+	font-weight: 700;
+	letter-spacing: 3px;
 }
 
 .h3_home{font-weight: 300;}
@@ -1253,6 +1253,7 @@ p.copyright {
 
 }
 .thin_italic {
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 6px;
+    
 }
