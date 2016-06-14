@@ -1252,3 +1252,7 @@ p.copyright {
 	}
 
 }
+.thin_italic {
+    font-weight: 300;
+    font-style: italic;
+}
