@@ -8,9 +8,11 @@
     position: fixed;
     width: 5%;
     height: 100%;
-    background-color: #34495e;
-    transition: width 2s;
-    
+    background-color:#675682;
+    transition: width 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-delay: 0.5s;
+   
    
     
 }
@@ -34,8 +36,10 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 }
 
 .navtitle {
-    border-style: dotted;
-    z-index: 5;
+    
+     position: fixed;
+    width: 30%;
+    height: 100%;
 }
 .abcen1{position: absolute;top: 20%;}
 
@@ -57,7 +61,7 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 	font-family: lato;
 	font-weight: 700;
 	letter-spacing: 3px;
-    color: black;
+    color: #4A4A4A;
 }
 
 .h3_home{
@@ -72,3 +76,21 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 .abcen{position: absolute;bottom: 8%;}
 
 		.button_down {display:none}
+
+
+
+
+.my-animation {
+  -webkit-animation: my-animation 1s linear both;
+  animation: my-animation 1s linear both;
+    animation-delay: 0.5s;
+}
+
+
+
+.contain {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: -100%;
+}

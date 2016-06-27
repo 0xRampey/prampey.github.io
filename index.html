@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> Scroll anim</title>
+        <title>Prudhvi Rampey</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -13,7 +13,7 @@
 <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrapTheme.css" rel="stylesheet">
-        <link href="css/general.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
                 <link href="css/animate.css" rel="stylesheet">
 
         
@@ -21,6 +21,8 @@
     </head>
     <body>
      <div id="sidebar">
+         <img class="contain my-animation" src="assets/Colourtext.svg"/>
+
         </div>
         
         <div id="fullpage">
@@ -41,8 +43,8 @@
                 </div>
             </div>
             <div class="section">
-                <div class="navtitle">
-                <h1>First one</h1>    
+                <div class="navtitle text-center">
+                
                 </div>
                 <div class="content">
                 knkjnk
@@ -64,10 +66,19 @@
         <script src="js/script.js"></script>
         <script src="js/typed.js"></script>
         <script src="js/wow.min.js"></script>
+        
 
 <script>
   
    $(document).ready(function() {
+       var entry=new Bounce();
+       entry.translate({
+    from: { x: 0, y: 0 },
+    to: { x: 100, y: 800 },
+    duration: 600,
+    stiffness: 4
+  });
+
     $('#fullpage').fullpage({navigation:true,
                              verticalCentered:false, navigationPosition:'left',
                              onLeave: function(index, nextIndex, direction){
@@ -83,6 +94,11 @@
                                 {
                                     sidebar.style.width="5%";
                                 }
+                                 entry.define("my-animation");
+                                 if(nextIndex==3)
+                                     {
+                                         sidebar.style.backgroundColor="#D7DD35";
+                                     }
                              },
         afterRender: function(){
             var pluginContainer = $(this);
