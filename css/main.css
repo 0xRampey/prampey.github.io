@@ -91,6 +91,6 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 .contain {
     width: inherit;
     height: inherit;
-    position: absolute;
-    top: -100%;
+    text-align: center;
+    
 }

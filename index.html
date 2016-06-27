@@ -71,13 +71,6 @@
 <script>
   
    $(document).ready(function() {
-       var entry=new Bounce();
-       entry.translate({
-    from: { x: 0, y: 0 },
-    to: { x: 100, y: 800 },
-    duration: 600,
-    stiffness: 4
-  });
 
     $('#fullpage').fullpage({navigation:true,
                              verticalCentered:false, navigationPosition:'left',
@@ -94,7 +87,7 @@
                                 {
                                     sidebar.style.width="5%";
                                 }
-                                 entry.define("my-animation");
+                                 
                                  if(nextIndex==3)
                                      {
                                          sidebar.style.backgroundColor="#D7DD35";
