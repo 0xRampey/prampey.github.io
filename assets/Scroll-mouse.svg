@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="93px" viewBox="0 0 31 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Scroll-mouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,40.9350615 L0,10.951458 C0.0376903297,4.89823129 6.48076138,0 14.4232804,0 C22.3657995,0 28.8088705,4.89823129 28.8463961,10.951458 L28.8465608,40.9350615 C28.8465059,40.9527725 28.8465608,40.9704933 28.8465608,40.9882239 C28.8465608,47.065908 22.3890382,51.9928444 14.4232804,51.9928444 C6.4575226,51.9928444 0,47.065908 0,40.9882239 C0,40.9704933 5.49589057e-05,40.9527725 0.000164753832,40.9350615 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.8465608" height="51.9928444" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-733.000000, -846.000000)">
+            <g id="Scroll-mouse" transform="translate(734.000000, 846.000000)">
+                <use id="Mouse" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2.1" xlink:href="#path-1"></use>
+                <ellipse id="Oval-3" fill="#FFFFFF" cx="14.5" cy="10.1431127" rx="2.83862434" ry="2.77996422"></ellipse>
+                <polyline id="Path-1" stroke="#FFFFFF" stroke-width="1.65" points="0 66 14.4232802 78.4722719 28.8465608 66"></polyline>
+                <polyline id="Path-1-Copy" stroke="#FFFFFF" stroke-width="1.65" points="0 78.5 14.4232802 90.9722719 28.8465608 78.5"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
