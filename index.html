@@ -21,7 +21,7 @@
     </head>
     <body>
      <div id="sidebar">
-         <img class="contain my-animation" src="assets/Colourtext.svg"/>
+         <img id="navtext" class="contain my-animation" src="assets/about.svg"/>
 
         </div>
         
@@ -69,7 +69,9 @@
         
 
 <script>
-  
+  var grey_blue="#A9B7C0";
+    var minty="#C7D8C6";
+    var light="#EFD9C1";
    $(document).ready(function() {
 
     $('#fullpage').fullpage({navigation:true,
@@ -78,6 +80,7 @@
                                 var leavingSection = $(this);
 
                                 var sidebar=document.getElementById('sidebar');
+                                 var navtext=document.getElementById('navtext');
                                 if(nextIndex != 1 )
                                 {
                                     console.log("Animate sidebar");
@@ -88,9 +91,18 @@
                                     sidebar.style.width="5%";
                                 }
                                  
-                                 if(nextIndex==3)
+                                 if(nextIndex==2)
                                      {
-                                         sidebar.style.backgroundColor="#D7DD35";
+                                         sidebar.style.backgroundColor=grey_blue;
+                                     }
+                                  else if(nextIndex==3)
+                                     {
+                                         sidebar.style.backgroundColor=minty;
+                                         navtext.setAttribute("src","assets/work.svg")
+                                     }
+                                  else
+                                     {
+                                         sidebar.style.backgroundColor=light;
                                      }
                              },
         afterRender: function(){
