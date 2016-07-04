@@ -50,6 +50,7 @@
 			
 		</div>    
                 
+                
             </div>
         <div class="section">
             <!-- Minor bug here where the width of the slide is actually the combined width of all slides present. Therefore, Bootstrap extends to the whole width. This causes problems in applying responsiveness.-->
@@ -68,6 +69,7 @@
 </div>
     
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/scrolloverflow.min.js"></script>
 <script src="js/jquery.fullPage.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/script.js"></script>
@@ -97,6 +99,7 @@
                             verticalCentered:false,
                              navigationPosition:'left',
                              slidesNavigation:true,
+                             scrollOverflow:true,
                              onLeave: function(index, nextIndex, direction){
                                 var leavingSection = $(this);
                                 
