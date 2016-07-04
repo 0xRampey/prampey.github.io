@@ -54,10 +54,10 @@
             </div>
         <div class="section">
             <div class="navtitle">
-                <h1>Second one</h1>    
+                   
             </div>
             <div class="content">
-                knkjnk
+                
              </div>
         </div>
 </div>
@@ -76,6 +76,7 @@
     var minty="#C7D8C6";
     var light="#EFD9C1";
     var primColours=[grey_blue,minty,light];
+    var navHeaders=["about.svg","work.svg"];
     
     
     
@@ -114,12 +115,14 @@
                                      {
                                          sidebar.style.backgroundColor=grey_blue;
                                          animateProgressBar(2);
+                                         animateNavText(2);
                                      }
                                   else if(nextIndex==3)
                                      {
                                          sidebar.style.backgroundColor=minty;
-                                         navtext.setAttribute("src","assets/work.svg")
+                                         
                                          animateProgressBar(3);
+                                         animateNavText(3);
                                      }
                                   else
                                      {
@@ -151,7 +154,10 @@
        {
            progressBar.css("width",((slideNum/numOfSlides)*100)+"%");
        }
-       
+       function animateNavText(slideNum)
+       {
+           navtext.setAttribute("src","assets/"+navHeaders[slideNum-2]);
+       }
 });
     
     
