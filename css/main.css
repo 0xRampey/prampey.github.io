@@ -104,3 +104,18 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
     transition: 0.5s width;
     transition-timing-function: ease-out;
 }
+
+.witty-text{
+    position: absolute;
+    top: 5%;
+font-family: Lato-Black;
+font-size: 72px;
+color: #4A4A4A;
+letter-spacing: 8.61px;
+    line-height: 85px;
+}
+
+.content-header {
+    position: absolute;
+    top: 10%;
+}
