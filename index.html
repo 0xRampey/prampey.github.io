@@ -24,6 +24,8 @@
          <img id="navtext" class="contain my-animation" src="assets/about.svg"/>
 
         </div>
+        <div id='progressBar'>
+        </div>
         
         <div id="fullpage">
             <div class="section">
@@ -68,19 +70,30 @@
         <script src="js/wow.min.js"></script>
         
 
-<script>
-  var grey_blue="#A9B7C0";
+<script> 
+    // colour palette to be used
+    var grey_blue="#A9B7C0";
     var minty="#C7D8C6";
     var light="#EFD9C1";
+    var primColours=[grey_blue,minty,light];
+    
+    
+    
    $(document).ready(function() {
-
+       //global declarations
+       var sidebar=document.getElementById('sidebar');
+       var navtext=document.getElementById('navtext');
+       var progressBar=$('#progressBar');
+       var numOfSlides;
+       
+//fullpage configuration
     $('#fullpage').fullpage({navigation:true,
-                             verticalCentered:false, navigationPosition:'left',
+                            verticalCentered:false,
+                             navigationPosition:'left',
                              onLeave: function(index, nextIndex, direction){
                                 var leavingSection = $(this);
-
-                                var sidebar=document.getElementById('sidebar');
-                                 var navtext=document.getElementById('navtext');
+                                
+                                 //sidebar animation
                                 if(nextIndex != 1 )
                                 {
                                     console.log("Animate sidebar");
@@ -91,14 +104,22 @@
                                     sidebar.style.width="5%";
                                 }
                                  
-                                 if(nextIndex==2)
+                                 // slide change callbacks
+                                 if(nextIndex==1)
                                      {
                                          sidebar.style.backgroundColor=grey_blue;
+                                         animateProgressBar(1);
+                                     }
+                                 else if(nextIndex==2)
+                                     {
+                                         sidebar.style.backgroundColor=grey_blue;
+                                         animateProgressBar(2);
                                      }
                                   else if(nextIndex==3)
                                      {
                                          sidebar.style.backgroundColor=minty;
                                          navtext.setAttribute("src","assets/work.svg")
+                                         animateProgressBar(3);
                                      }
                                   else
                                      {
@@ -107,7 +128,9 @@
                              },
         afterRender: function(){
             var pluginContainer = $(this);
-            console.log(pluginContainer.children());
+         numOfSlides=pluginContainer.children().length;
+            animateProgressBar(1);
+            
             $.each(pluginContainer.children(), function(key,value)
                   {
                 if(key!=0)
@@ -121,6 +144,13 @@
 
             
         });
+       
+       //functions
+       
+       function animateProgressBar(slideNum)
+       {
+           progressBar.css("width",((slideNum/numOfSlides)*100)+"%");
+       }
        
 });
     
