@@ -49,7 +49,7 @@ progress("Path-4");
                 bars[i].animate(prog_width/100);
             }
    
-      if(prog_width>=99)
+      if(prog_width>=90)
       {
         console.log("done")
         //animate overlay to cover whole screen

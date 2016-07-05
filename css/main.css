@@ -49,10 +49,6 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 
 
 
-
-
-
-
 .h1_home{
 	font-size: 80px;
 	font-family: lato;
@@ -123,4 +119,8 @@ letter-spacing: 8.61px;
 
 .slide-container {
     width: 50%;
+}
+
+#scrollmouse {
+    width: 3vw;
 }
