@@ -55,6 +55,7 @@ var fake_perc=0;
             {
                 bars[i].animate(prog_width/100);
             }
+              console.log("loading");
               delta=0;
           }
       else
