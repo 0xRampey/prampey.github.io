@@ -5,7 +5,8 @@ var bars=[];
 {
     
 bars.push(new ProgressBar.Path('#'+path, {
-  easing: 'linear',
+  easing: 'easeInOut',
+    duration:3000
   
 }));
   
@@ -29,6 +30,7 @@ progress("Path-4");
   }
 }
          prog_width=0;
+var delta=0;
         for(var i=0;i<bars.length;i++)
             {
                 bars[i].set(0);
@@ -39,17 +41,24 @@ progress("Path-4");
   var all = document.getElementsByTagName("*");
   var totalele=all.length;
   var per_inc=100/all.length;
+    
 
   if($(ele).on())
   {
     prog_width=per_inc+prog_width;
+      delta=per_inc+delta;
+      console.log(delta);
     console.log(prog_width);
+      if(delta>20)
+          {
        for(var i=0;i<bars.length;i++)
             {
                 bars[i].animate(prog_width/100);
             }
+              delta=0;
+          }
    
-      if(prog_width>=95)
+      if(prog_width>=99)
       {
         console.log("done")
         //animate overlay to cover whole screen
