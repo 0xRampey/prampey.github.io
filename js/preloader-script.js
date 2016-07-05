@@ -5,7 +5,7 @@ var bars=[];
 {
     
 bars.push(new ProgressBar.Path('#'+path, {
-  easing: 'easeInOut',
+  easing: 'linear',
     duration:3000
   
 }));
