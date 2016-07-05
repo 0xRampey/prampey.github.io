@@ -30,6 +30,7 @@ progress("Path-4");
 }
          prog_width=0;
 var delta=0;
+var fake_perc=0;
         for(var i=0;i<bars.length;i++)
             {
                 bars[i].set(0);
@@ -56,7 +57,17 @@ var delta=0;
             }
               delta=0;
           }
-   
+      else
+          {
+              if(fake_perc==0)
+                  {
+              for(var i=0;i<bars.length;i++)
+            {
+                fake_perc=50;
+                bars[i].animate(50);
+            }
+          }
+          }
       if(prog_width>=99)
       {
         console.log("done")
