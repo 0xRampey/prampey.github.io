@@ -5,8 +5,8 @@ var bars=[];
 {
     
 bars.push(new ProgressBar.Path('#'+path, {
-  easing: 'linear',
-    duration:7000
+  easing: 'easeOut',
+  duration: 7000
 }));
   
 }
@@ -29,8 +29,6 @@ progress("Path-4");
   }
 }
          prog_width=0;
-var delta=0;
-var fake_perc=0;
         for(var i=0;i<bars.length;i++)
             {
                 bars[i].set(0);
@@ -41,34 +39,16 @@ var fake_perc=0;
   var all = document.getElementsByTagName("*");
   var totalele=all.length;
   var per_inc=100/all.length;
-    
 
   if($(ele).on())
   {
     prog_width=per_inc+prog_width;
-      delta=per_inc+delta;
-      console.log(delta);
     console.log(prog_width);
-      if(delta>70)
-          {
        for(var i=0;i<bars.length;i++)
             {
                 bars[i].animate(prog_width/100);
             }
-              console.log("loading");
-              delta=0;
-          }
-      else
-          {
-              if(fake_perc==0)
-                  {
-              for(var i=0;i<bars.length;i++)
-            {
-                fake_perc=50;
-                bars[i].animate(50);
-            }
-          }
-          }
+   
       if(prog_width>=99)
       {
         console.log("done")
