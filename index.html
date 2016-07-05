@@ -84,6 +84,7 @@
     var light="#EFD9C1";
     var primColours=[grey_blue,minty,light];
     var navHeaders=["about.svg","work.svg"];
+    var accentColours=["#FFFFFF","#5F0F4E","#253640"];
     
     
     
@@ -155,7 +156,12 @@
        
        function animateProgressBar(slideNum)
        {
-           progressBar.css("width",((slideNum/numOfSlides)*100)+"%");
+           progressBar.css({
+               width:((slideNum/numOfSlides)*100)+"%",
+               backgroundColor:accentColours[slideNum-1]
+           });
+         
+           
        }
        function animateNavText(slideNum)
        {

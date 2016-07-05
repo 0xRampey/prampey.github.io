@@ -95,10 +95,9 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 #progressBar {
     position: fixed;
     width:100%;
-    height: 3%;
+    height: 2%;
     top:0;
     left:0;
-    border: 5px solid red;
     z-index: 5000;
     -webkit-transition: width 2s;
     transition: 0.5s width;
