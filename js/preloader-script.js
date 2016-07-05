@@ -48,7 +48,7 @@ var delta=0;
       delta=per_inc+delta;
       console.log(delta);
     console.log(prog_width);
-      if(delta>20)
+      if(delta>40)
           {
        for(var i=0;i<bars.length;i++)
             {
