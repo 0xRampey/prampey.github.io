@@ -8,9 +8,10 @@
     position: fixed;
     width: 5%;
     height: 100%;
-    transition: width 0.5s, backgroundColour 0.5s;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition-delay: 0.5s;   
+      
         background-color:#A9B7C0;
 }
 
@@ -103,8 +104,9 @@ background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, F
 .witty-text{
     position: absolute;
     top: 5%;
-font-family: Lato-Black;
+font-family: lato;
 font-size: 72px;
+    font-weight: 900;
 color: #4A4A4A;
 letter-spacing: 8.61px;
     line-height: 85px;

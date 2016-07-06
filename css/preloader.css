@@ -27,6 +27,7 @@ body {
     width:405px;
     background-color: #A9B7C0;
     opacity:0;
+    -webkit-transition: opacity 0.5s 2s,height 2s 2s, width 2s 2s;
     transition: opacity 0.5s 2s,height 2s 2s, width 2s 2s;
     
 }
