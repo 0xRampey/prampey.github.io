@@ -88,7 +88,7 @@
 	        transition-timing-function: ease-out;
 }
 .witty-text {
-  margin-top: 5%;
+  padding-top: 5%;
   margin-left: 30%;
 	font-family: lato;
 	font-size: 6em;
@@ -125,12 +125,15 @@
 }
 
 .content-text {
+  padding-top: 5vh;
   margin-left:27%;
-  margin-top: 5%;
 font-family: OpenSans-Light;
-font-size: 1.7em;
+font-size: 1.4em;
 color: #4A4A4A;
-letter-spacing: 0.92px;
+letter-spacing: 0.92px;  
+}
 
-  
+p {
+  padding: 0;
+  margin: 0;
 }
