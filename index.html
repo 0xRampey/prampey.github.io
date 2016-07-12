@@ -50,8 +50,8 @@
                 <div class="intro">
                     
 		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">PRUDHVI <span class="thin_italic wow fadeInLeft" data-wow-delay="1s">RAMPEY</span></h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s"><span class="typed"> </span> Developer</h3>
+			<h1 class="h1_home wow fadeIn" data-wow-delay="2s">PRUDHVI <span class="thin_italic wow fadeInLeft" data-wow-delay="1s">RAMPEY</span></h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="2s"><span class="typed"> </span> Developer</h3>
 			
 		</div>    
         <!-- /.container -->
@@ -84,6 +84,13 @@
             <div class="slide"> Slide 3 </div>
                
         </div>
+            <div class="section">
+            <div class="col-xs-9 col-xs-offset-3 witty-text">
+			I'll just leave <br> this here.
+			
+		</div>    
+               
+        </div>
 </div>
     
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -103,7 +110,7 @@
     var minty="#C7D8C6";
     var light="#EFD9C1";
     var primColours=[grey_blue,minty,light];
-    var navHeaders=["about.svg","work.svg"];
+    var navHeaders=["about.svg","work.svg","cv.svg"];
     var accentColours=["#FFFFFF","#5F0F4E","#253640"];
     
     
@@ -149,23 +156,27 @@
                                      }
                                   else if(nextIndex==3)
                                      {
-                                         sidebar.style.backgroundColor=minty;
+                                         sidebar.style.backgroundColor=light;
                                          
                                          animateProgressBar(3);
                                          animateNavText(3);
                                      }
+                                  else if(nextIndex==4)
+                                     {
+                                         sidebar.style.backgroundColor=minty;
+                                         
+                                         animateProgressBar(4);
+                                         animateNavText(4);
+                                     }
                                   else
                                      {
-                                         sidebar.style.backgroundColor=light;
+                                         sidebar.style.backgroundColor=minty;
                                      }
                              },
         afterRender: function(){
             var pluginContainer = $(this);
          numOfSlides=pluginContainer.children().length;
             animateProgressBar(1);
-            
-           
-           
         }
     
 
