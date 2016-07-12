@@ -11,8 +11,7 @@
     -webkit-transition: width 0.5s;
     transition: width 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      
-        background-color:#A9B7C0;
+    background-color:#A9B7C0;
 }
 
 .content {
@@ -125,4 +124,28 @@ letter-spacing: 8.61px;
 
 #scrollmouse {
     width: 3vw;
+}
+
+.resume {
+    position: absolute;
+    top:40%;
+    left:50%;
+}
+
+
+#resume-png {
+	transition: all 1s;
+     -moz-border-radius:25px; 
+    -webkit-border-radius:25px; 
+    border-radius:25px;
+}
+
+#resume-png:hover {
+    transform: translate(-40px,-40px);
+   -webkit-box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
+-moz-box-shadow:    27px 27px 0px 1px rgba(49, 50, 50, 0.24);
+box-shadow:         27px 27px 0px 1px rgba(49, 50, 50, 0.24);
+    -moz-border-radius:25px; 
+    -webkit-border-radius:25px; 
+    border-radius:25px;
 }
