@@ -2,8 +2,11 @@
 	position: fixed;
 	width: 5%;
 	height: 100%;
+	
 	-webkit-transition: width 0.5s;
+	
 	transition: width 0.5s;
+	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #A9B7C0;
 }
@@ -85,10 +88,10 @@
 	        transition-timing-function: ease-out;
 }
 .witty-text {
-	position: absolute;
-	top: 5%;
+  margin-top: 5%;
+  margin-left: 30%;
 	font-family: lato;
-	font-size: 72px;
+	font-size: 6em;
 	font-weight: 900;
 	color: #4A4A4A;
 	letter-spacing: 8.61px;
@@ -119,4 +122,15 @@
 	        transform: translate(-40px, -40px);
 	box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
 	border-radius: 25px;
+}
+
+.content-text {
+  margin-left:27%;
+  margin-top: 5%;
+font-family: OpenSans-Light;
+font-size: 1.7em;
+color: #4A4A4A;
+letter-spacing: 0.92px;
+
+  
 }
