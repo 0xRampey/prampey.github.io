@@ -88,10 +88,11 @@
 	        transition-timing-function: ease-out;
 }
 .witty-text {
-  padding-top: 5%;
+  padding-top: 4%;
+  padding-bottom: 2%;
   margin-left: 30%;
 	font-family: lato;
-	font-size: 6em;
+	font-size: 5em;
 	font-weight: 900;
 	color: #4A4A4A;
 	letter-spacing: 8.61px;
@@ -126,11 +127,14 @@
 
 .content-text {
   padding-top: 5vh;
-  margin-left:27%;
-font-family: OpenSans-Light;
-font-size: 1.4em;
+  padding-bottom: 15vh;
+  margin-left:30%;
+  padding-right: 3%;
+font-family: Lato-Light;
+font-size: 1.6em;
 color: #4A4A4A;
-letter-spacing: 0.92px;  
+  line-height: inherit;
+
 }
 
 p {
