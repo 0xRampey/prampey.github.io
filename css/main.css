@@ -47,10 +47,16 @@
 	font-family: lato;
 	font-weight: 700;
 	letter-spacing: 3px;
-	color: #4A4A4A;
+	color: black;
 }
 .h3_home {
-	font-weight: 300;
+  
+font-family: lato;
+  font-weight: 300;
+font-size: 24px;
+  letter-spacing: 2px;
+  color: #869690;
+ 
 }
 .thin_italic {
 	font-weight: 100;
@@ -130,10 +136,11 @@
   padding-bottom: 15vh;
   margin-left:30%;
   padding-right: 3%;
-font-family: Lato-Light;
+font-family: lato;
 font-size: 1.6em;
 color: #4A4A4A;
   line-height: inherit;
+  font-weight: 300;
 
 }
 
