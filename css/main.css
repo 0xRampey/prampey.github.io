@@ -3,9 +3,9 @@
 	width: 5%;
 	height: 100%;
 	
-	-webkit-transition: width 0.5s;
+	-webkit-transition: width 1s;
 	
-	transition: width 0.5s;
+	transition: width 1s;
 	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #A9B7C0;
@@ -87,9 +87,8 @@ font-size: 24px;
 	top: 0;
 	left: 0;
 	z-index: 5000;
-	-webkit-transition: width 2s;
-	-webkit-transition: 0.5s width;
-	transition: 0.5s width;
+	-webkit-transition: 1s width;
+	transition: 1s width;
 	-webkit-transition-timing-function: ease-out;
 	        transition-timing-function: ease-out;
 }
