@@ -9,6 +9,7 @@
 	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #A9B7C0;
+  z-index: 5;
 }
 .content {
 	border-style: dotted;
@@ -18,23 +19,22 @@
 	background-color: aquamarine;
 }
 .intro {
-	background: -webkit-linear-gradient(to left, #2BC0E4, #EAECC6);
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(right, #2BC0E4, #EAECC6);
-	background: linear-gradient(to left, #2BC0E4, #EAECC6);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	background: white;
 	position: absolute;
 	width: 100%;
 	height: 100%;
+  
 }
 .navtitle {
 	position: fixed;
 	width: 30%;
 	height: 100%;
 }
-.abcen1 {
-	position: absolute;
-	top: 20%;
+.intro-header{
+	margin-top: 10%;
+ 
+
 }
 .content-section-c {
 	border-top: 1px solid #32465A;
@@ -63,8 +63,8 @@ font-size: 24px;
 	letter-spacing: 6px;
 }
 .abcen {
-	position: absolute;
-	bottom: 8%;
+  margin-top: 20%;
+	
 }
 .button_down {
 	display: none
@@ -114,20 +114,22 @@ font-size: 24px;
 	width: 3vw;
 }
 .resume {
-	position: absolute;
-	top: 40%;
-	left: 50%;
+	margin-left: 50vw;
+  margin-top: 30px;
+  
+  
 }
 #resume-png {
 	-webkit-transition: all 1s;
 	transition: all 1s;
-	border-radius: 25px;
+	border-radius: 20px;
+
 }
 #resume-png:hover {
 	-webkit-transform: translate(-40px, -40px);
 	        transform: translate(-40px, -40px);
 	box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
-	border-radius: 25px;
+	border-radius: 20px;
 }
 
 .content-text {
@@ -146,4 +148,8 @@ color: #4A4A4A;
 p {
   padding: 0;
   margin: 0;
+}
+
+.text-center {
+  text-align: center;
 }
