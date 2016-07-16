@@ -52,10 +52,15 @@ progress("Path-4");
       if(prog_width>=90)
       {
         console.log("done")
-        //animate overlay to cover whole screen
-        overlay.css({height:window.innerHeight,width: window.innerWidth,opacity:1});
-          //fade out wrapper
-          $(".wrapper").delay(4000).fadeOut({duration:600});
+        $("#hidden").delay(2400).fadeOut({duration:600});
+        //over lay animation starts after 3.2s
+        //animate overlay to transition
+        overlay.css({transform:"translateX(-195%)"});
+        // Above animation goes on for 4.2s
+
+          //Trying to fade out wrapper when at the moment of transition where screen is completely filled
+          $(".wrapper").delay(3420).fadeOut(0);
+        overlay.delay(4300).fadeOut();
         
       }			
     

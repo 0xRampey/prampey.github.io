@@ -20,15 +20,19 @@ body {
 
 
 #overlay-screen {
-    position: absolute;
-    top:0;
-    left:0;
-    height:561px;
-    width:405px;
+     position: absolute;
+  top:0;
+  left:100%;
+    width: 100vw;
+    height: 100vh;
+    z-index:5000;
     background-color: #A9B7C0;
-    opacity:0;
-    -webkit-transition: opacity 0.5s 2s,height 2s 2s, width 2s 2s;
-    transition: opacity 0.5s 2s,height 2s 2s, width 2s 2s;
+-webkit-transition: -webkit-transform 1s ease;
+transition: -webkit-transform 1s ease;
+transition: transform 1s ease;
+transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition-delay: 3.2s;
+          transition-delay: 3.2s
     
 }
 
