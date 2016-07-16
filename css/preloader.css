@@ -22,15 +22,15 @@ body {
 #overlay-screen {
      position: absolute;
   top:0;
-  left:100%;
+  left:100vw;
     width: 100vw;
     height: 100vh;
     z-index:5000;
     background-color: #A9B7C0;
--webkit-transition: -webkit-transform 1s ease;
-transition: -webkit-transform 1s ease;
-transition: transform 1s ease;
-transition: transform 1s ease, -webkit-transform 1s ease;
+-webkit-transition: -webkit-transform 1.2s ease;
+transition: -webkit-transform 1.2s ease;
+transition: transform 1.2s ease;
+transition: transform 1.2s ease, -webkit-transform 1.2s ease;
   -webkit-transition-delay: 3.2s;
           transition-delay: 3.2s
     
