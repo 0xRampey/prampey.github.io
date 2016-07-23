@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1466px" height="2005px" viewBox="0 0 1466 2005" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg width="1801px" height="2739px" viewBox="0 -71 1801 2739" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
-    <title>cv-2</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700" font-family="Lato-Black, Lato" letter-spacing="95.669754" font-size="1578">
-        <g id="cv-copy" transform="translate(-317.000000, -232.000000)" fill="#4A4A4A">
-            <g id="cv-2" transform="translate(270.000000, -162.000000)">
-                <text id="C" style="mix-blend-mode: exclusion;">
-                    <tspan x="0" y="1557">C</tspan>
-                </text>
-                <text id="V" style="mix-blend-mode: exclusion;">
-                    <tspan x="569" y="2399">V</tspan>
-                </text>
-            </g>
-        </g>
-    </g>
+    <text id="C" stroke="none" fill="none" style="mix-blend-mode: exclusion;" font-family="Lato-Black, Lato" font-size="1578" font-weight="700" letter-spacing="95.669754">
+        <tspan x="0" y="1486" fill="#4A4A4A">C</tspan>
+    </text>
+    <text id="V" stroke="none" fill="none" style="mix-blend-mode: exclusion;" font-family="Lato-Black, Lato" font-size="1578" font-weight="700" letter-spacing="95.669754">
+        <tspan x="533" y="2332" fill="#4A4A4A">V</tspan>
+    </text>
 </svg>

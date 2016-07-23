@@ -137,7 +137,7 @@ font-size: 24px;
 
 .content-text {
   padding-top: 5vh;
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
   margin-left:30%;
   padding-right: 3%;
 font-family: lato;
@@ -161,4 +161,11 @@ p {
 
 #border {
   border: 2px solid red;
+}
+
+.circular-logos {
+  padding: 10vh 0 10vh 0;
+ display: block;
+  margin: auto;
+  
 }
