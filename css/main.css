@@ -5,6 +5,8 @@
 	
 	-webkit-transition: width 1s;
 	
+	-webkit-transition: width 0.5s;
+	
 	transition: width 0.5s;
 	background-color: #A9B7C0;
   z-index: 5;
@@ -79,7 +81,8 @@ font-size: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 	width: 35%;
 	
 }
@@ -140,17 +143,18 @@ font-size: 24px;
   padding-bottom: 5vh;
   margin-left:30%;
   padding-right: 3%;
-font-family: lato;
-font-size: 1.6em;
-color: #4A4A4A;
-  line-height: inherit;
-  font-weight: 300;
+
 
 }
 
 p {
   padding: 0;
   margin: 0;
+  font-family: lato;
+font-size: 1.6em;
+color: #4A4A4A;
+  line-height: inherit;
+  font-weight: 300;
 }
 
 .text-center {
@@ -164,8 +168,24 @@ p {
 }
 
 .circular-logos {
-  padding: 10vh 0 10vh 0;
+  
  display: block;
   margin: auto;
+  
+}
+
+#bits-placeholder {
+  padding: 10vh 0 10vh 0;
+}
+
+.work-pic {
+
+}
+
+.work-text {
+  margin: 1%;
+  margin-left: 60%; 
+/* NOTE: 50+(value)% for specifiying margin*/
+  font-size: 2em;
   
 }
