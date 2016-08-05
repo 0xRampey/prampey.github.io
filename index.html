@@ -146,7 +146,7 @@
             <br>  there.
           </p>
         <p class="content-text">
-            <span class="animated infinite fadeInDown">I’m a frontend web dev, based in Goa. Well, atleast most of the time.</span>
+            <span >I’m a frontend web dev, based in Goa. Well, atleast most of the time.</span>
            <br>
           <br>
            I tend to experiment with novel technologies or rather, anything that looks good. This website is a brainchild of that urge.
@@ -217,7 +217,7 @@
     var light = "#EFD9C1";
     var primColours = [grey_blue, minty, light];
     var navHeaders = ["about.svg", "work.svg", "cv-2.svg"];
-    var accentColours = ["#FFFFFF", "#5F0F4E", "#253640", "#737495"];
+    var accentColours = [grey_blue, "#5F0F4E", "#253640", "#737495"];
 
 
 
@@ -280,6 +280,14 @@
 
       });
 
+      $.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
       //functions
 
       function animateProgressBar(slideNum) {
@@ -294,6 +302,7 @@
       function animateNavText(slideNum) {
         $("#navtext").css("visibility","visible");
         navtext.setAttribute("src", "assets/" + navHeaders[slideNum - 2]);
+        $('#navtext').animateCss('fadeInDown');
       }
     });
 

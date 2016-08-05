@@ -7,6 +7,9 @@
 	background-color: #A9B7C0;
   z-index: 5;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .content {
@@ -68,19 +71,13 @@ font-size: 24px;
 .button_down {
 	display: none
 }
-.my-animation {
-	-webkit-animation: my-animation 1s linear both;
-	animation: my-animation 1s linear both;
-	-webkit-animation-delay: 0.5s;
-	        animation-delay: 0.5s;
-}
+
 .contain {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  
+  
 	width: 35%;
+  
+  text-align: center;
 	
 }
 #progressBar {
@@ -90,8 +87,8 @@ font-size: 24px;
 	top: 0;
 	left: 0;
 	z-index: 5000;
-	-webkit-transition: 1s width;
-	transition: 1s width;
+	-webkit-transition: 1s width,background-color 1s;
+	transition: 1s width,background-color 1s;
 	-webkit-transition-timing-function: ease-out;
 	        transition-timing-function: ease-out;
 }
