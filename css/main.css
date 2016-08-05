@@ -2,15 +2,12 @@
 	position: fixed;
 	width: 5%;
 	height: 100%;
-	
-	-webkit-transition: width 1s;
-	
-	-webkit-transition: width 0.5s;
-	
-	transition: width 0.5s;
+	-webkit-transition: width 1s,background-color 1s;
+	transition: width 1s,background-color 1s;
 	background-color: #A9B7C0;
   z-index: 5;
   text-align: center;
+  
 }
 .content {
 	border-style: dotted;
@@ -188,4 +185,7 @@ color: #4A4A4A;
 /* NOTE: 50+(value)% for specifiying margin*/
   font-size: 2em;
   
+}
+#navtext {
+  visibility: hidden;
 }

@@ -50,9 +50,7 @@
       <div class="intro">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg height="100%" width="100%" viewBox="50 0 850 600"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
-    <title>Tablet Portrait</title>
-    <desc>Created with Sketch.</desc>
+    
     <defs>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
             <feGaussianBlur stdDeviation="6.04607077" in="SourceGraphic"></feGaussianBlur>
@@ -148,7 +146,7 @@
             <br>  there.
           </p>
         <p class="content-text">
-            I’m a frontend web dev, based in Goa. Well, atleast most of the time.
+            <span class="animated infinite fadeInDown">I’m a frontend web dev, based in Goa. Well, atleast most of the time.</span>
            <br>
           <br>
            I tend to experiment with novel technologies or rather, anything that looks good. This website is a brainchild of that urge.
@@ -158,7 +156,7 @@
           <br>
            When I’m not dabbling in code or opening a billion tabs in Chrome, I usually tend to pick up archaic classics that I almost never finish. 
           
-          <svg class="circular-logos" id="bits-placeholder"  width="240px" height="240px" viewBox="763 127 285 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg class="circular-logos animated infinite bounce" id="bits-placeholder"  width="240px" height="240px" viewBox="763 127 285 285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <circle id="Oval-88" stroke="none" fill="#D8D8D8" fill-rule="evenodd" cx="905.5" cy="269.5" r="142.5"></circle>
 <!--            TODO: Remember to add a minimalist picture of BITS-->
 </svg>
@@ -253,6 +251,7 @@
           if (nextIndex == 1) {
             sidebar.style.backgroundColor = grey_blue;
             animateProgressBar(1);
+            $("#navtext").css("visibility","hidden");
           } else if (nextIndex == 2) {
             sidebar.style.backgroundColor = grey_blue;
             animateProgressBar(2);
@@ -293,6 +292,7 @@
       }
 
       function animateNavText(slideNum) {
+        $("#navtext").css("visibility","visible");
         navtext.setAttribute("src", "assets/" + navHeaders[slideNum - 2]);
       }
     });
