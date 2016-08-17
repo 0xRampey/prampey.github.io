@@ -123,6 +123,8 @@ font-size: 24px;
 	-webkit-transition: all 1s;
 	transition: all 1s;
 	border-radius: 20px;
+ 
+  
 
 }
 #resume-png:hover {
@@ -130,6 +132,7 @@ font-size: 24px;
 	        transform: translate(-40px, -40px);
 	box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
 	border-radius: 20px;
+  
 }
 
 .content-text {
