@@ -12,7 +12,7 @@ body {
 #overlay-screen {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 100vw;
   width: 100vw;
   height: 100vh;
   z-index: 5000;

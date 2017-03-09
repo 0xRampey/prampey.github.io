@@ -6,10 +6,11 @@ function progress(path) {
 
   bars.push(new ProgressBar.Path('#' + path, {
     easing: 'easeOut',
-    duration: 7000
+    duration: 5000
   }));
-
 }
+
+//Initializing and adding to Progress Bar array
 progress("Path-1");
 progress("Path-2");
 progress("Path-3");
@@ -19,50 +20,36 @@ document.onreadystatechange = function (e) {
   if (document.readyState == "interactive") {
     // show svg once document is loaded (to prevent FOUC)
     hidden.css("visibility", "visible");
-    var all = document.getElementsByTagName("*");
-    for (var i = 0, max = all.length; i < max; i++) {
-      set_ele(all[i]);
-    }
   }
 }
-prog_width = 0;
+
+//Starting with zero progress for every bar
 for (var i = 0; i < bars.length; i++) {
   bars[i].set(0);
 }
 
-function check_element(ele) {
-
-  var all = document.getElementsByTagName("*");
-  var totalele = all.length;
-  var per_inc = 100 / all.length;
-
-  if ($(ele).on()) {
-    prog_width = per_inc + prog_width;
-    console.log(prog_width);
+Pace.on("change", function (progress) {
+  if (progress > 90) {
+    //Enough progress, load the next screen
     for (var i = 0; i < bars.length; i++) {
-      bars[i].animate(prog_width / 100);
+      bars[i].animate(1);
     }
+    //over lay animation starts after 3.2s
+    //animate overlay to transition
+    overlay.css({
+      transform: "translateX(-195%)"
+    });
+    // Above animation goes on for 4.2s
 
-    if (prog_width >= 90) {
-      console.log("done")
-        //over lay animation starts after 3.2s
-        //animate overlay to transition
-      overlay.css({
-        transform: "translateX(-195%)"
-      });
-      // Above animation goes on for 4.2s
-
-      //Trying to fade out wrapper when at the moment of transition where screen is completely filled
-      $(".wrapper").delay(3612).fadeOut(150);
-      overlay.delay(4300).fadeOut();
-
-    }
-
+    //Trying to fade out wrapper when at the moment of transition where screen is completely filled
+    $(".wrapper").delay(3612).fadeOut(150);
+    // Fading out progress counter at the same time
+    $(".pace").delay(3612).fadeOut(0);
+    overlay.delay(4300).fadeOut();
   } else {
-    set_ele(ele);
+    //Continue animating progress bars
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].animate(progress / 100);
+    }
   }
-}
-
-function set_ele(set_element) {
-  check_element(set_element);
-}
+});
