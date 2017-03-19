@@ -7,8 +7,22 @@
   <title>Prudhvi Rampey</title>
   <script src="js/pace.js"></script>
   <link href="css/pace-counter.css" rel="stylesheet">
+  <!--  Prefetching my preloader SVG so that users can see it progress alongwith the loading percentages without any lag -->
+  <svg id="prefetched-loader" style="display:none;">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Desktop-HD" stroke-width="35">
+        <g id="Group-Copy-4" transform="translate(-28.000000, -29.000000)">
+
+          <path id="Path-1" stroke="#A9B7C0" d="M957.789993 607.894997 890 607.894997 890 5.68434189e-14"></path>
+          <path id="Path-2" stroke="#C7D8C6" d="M937 584.789993 937 481 1647 481"></path>
+          <path id="Path-3" stroke="#EFD9C1" transform="translate(997.605003, 838.500000) rotate(-270.000000) translate(-997.605003, -838.500000) " d="M686.105003 871.105003 686.105003 805.894997 1309.105 805.894997"></path>
+          <path id="Path-4" stroke="#CCCBC6" transform="translate(493.500000, 602.500000) rotate(-180.000000) translate(-493.500000, -602.500000) " d="M-2.27373675e-13 650 -1.92156588e-13 555 987 555"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-  <!--  TODO: Remember to cut down on the the fonr sizes requested. -->
+  <!--  TODO: Remember to cut down on the the font sizes requested. -->
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href="css/jquery.fullPage.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -19,22 +33,14 @@
 </head>
 
 <body>
+
   <div class="wrapper">
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-      <svg id="hidden" width="1940px" height="1824px" viewBox="750 350 700 824" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Desktop-HD" stroke-width="35">
-            <g id="Group-Copy-4" transform="translate(-28.000000, -29.000000)">
-
-              <path id="Path-1" stroke="#A9B7C0" d="M957.789993 607.894997 890 607.894997 890 5.68434189e-14"></path>
-              <path id="Path-2" stroke="#C7D8C6" d="M937 584.789993 937 481 1647 481"></path>
-              <path id="Path-3" stroke="#EFD9C1" transform="translate(997.605003, 838.500000) rotate(-270.000000) translate(-997.605003, -838.500000) " d="M686.105003 871.105003 686.105003 805.894997 1309.105 805.894997"></path>
-              <path id="Path-4" stroke="#CCCBC6" transform="translate(493.500000, 602.500000) rotate(-180.000000) translate(-493.500000, -602.500000) " d="M-2.27373675e-13 650 -1.92156588e-13 555 987 555"></path>
-            </g>
-          </g>
-        </g>
-      </svg>
+    <svg id="hidden" width="1940px" height="1824px" viewBox="750 350 700 824" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Internally referencing inner core of the preloaded SVG here. This is meant to prevent delayed parsing of SVG which is not in sync with the Pacejs counter.-->
+      <!--     FIXME: Add WebKit compat-->
+      <use xlink:href="#Page-1"></use>
+    </svg>
 
   </div>
   <div id="overlay-screen">
@@ -78,7 +84,7 @@
                     <rect id="Rectangle-3-Copy-4" fill="#CCCBC6" transform="translate(18.342454, 78.908253) scale(-1, 1) rotate(48.000000) translate(-18.342454, -78.908253) " x="14.6772702" y="63.8546087" width="7.33036764" height="30.107288" rx="3.66518382"></rect>
                     <rect id="Rectangle-3-Copy-5" fill="#CCCBC6" transform="translate(35.140859, 46.520216) scale(-1, 1) rotate(-34.000000) translate(-35.140859, -46.520216) " x="31.4756747" y="31.4665717" width="7.33036764" height="30.107288" rx="3.66518382"></rect>
                   </g>
-                  <!-- TODO: Check for SVG text comptability and take the required actions             -->
+
                   <text id="PRUDHVI" font-family="Lato-Black, Lato" font-size="50.8572478" font-weight="700" letter-spacing="3.08333349" fill="#4A4A4A">
                     <tspan x="249.756098" y="246.459959">PRUDHVI</tspan>
                   </text>
