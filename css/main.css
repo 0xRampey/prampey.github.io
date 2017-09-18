@@ -1,4 +1,33 @@
-/*Preloading some assets so that I don't encounter any lag while accessing them later*/
+/* TODO: Positioning of the background in .style-link or even better, using a pseudo element to contain all transitions and transforms */
+  
+.style-link {
+    background: linear-gradient(#DECAB3, #DECAB3) no-repeat;
+    background-size: 100% 10px;
+    background-position: 0em 1.15em;
+    transition: background 0.5s;
+    display: inline-block;
+    /* Remove any default link effects */
+    text-decoration: none; 
+    /* Inherit parent style font-colour, which is black in this case */
+    color: inherit;
+  }
+
+  .style-link:visited {
+    text-decoration: none;
+  }
+
+  .style-link span:hover{
+    display: inline-block;
+    transform: skewX(45deg);
+  }
+
+  .style-link:hover {
+    background-size: 100% 80%;
+    background-position: 0.5em 0.5em;
+    transform: skewX(-45deg);
+  }
+
+  /*Preloading some assets so that I don't encounter any lag while accessing them later*/
 
 body::after {
   position: absolute;
