@@ -131,9 +131,9 @@ body::after {
   margin-left: 30%;
   font-family: lato;
   font-size: 5em;
-  font-weight: 900;
+  font-weight: 700;
   color: #4A4A4A;
-  letter-spacing: 8.61px;
+  /* letter-spacing: 8.61px; */
   line-height: 85px;
 }
 .content-header {
