@@ -1,5 +1,5 @@
 /* TODO: Positioning of the background in .style-link or even better, using a pseudo element to contain all transitions and transforms */
-  
+
 .style-link {
     background: linear-gradient(#DECAB3, #DECAB3) no-repeat;
     background-size: 100% 10px;
@@ -7,202 +7,273 @@
     transition: background 0.5s;
     display: inline-block;
     /* Remove any default link effects */
-    text-decoration: none; 
+    text-decoration: none;
     /* Inherit parent style font-colour, which is black in this case */
     color: inherit;
-  }
+}
 
-  .style-link:visited {
+.style-link:visited {
     text-decoration: none;
-  }
+}
 
-  .style-link span:hover{
+.style-link span:hover {
     display: inline-block;
     transform: skewX(45deg);
-  }
+}
 
-  .style-link:hover {
+.style-link:hover {
     background-size: 100% 80%;
     background-position: 0.5em 0.5em;
     transform: skewX(-45deg);
-  }
+}
 
-  /*Preloading some assets so that I don't encounter any lag while accessing them later*/
+
+/*Preloading some assets so that I don't encounter any lag while accessing them later*/
 
 body::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  /*  Navtext images for now*/
-  content: url(/assets/about.png) url(/assets/work.png) url(/assets/cv.png);
-}
-#sidebar {
-  position: fixed;
-  width: 5%;
-  height: 100%;
-  -webkit-transition: width 1s, background-color 1s;
-  transition: width 1s, background-color 1s;
-  background-color: #A9B7C0;
-  z-index: 5;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.content {
-  border-style: dotted;
-  margin-left: 30.5%;
-}
-.aboutme {
-  background-color: aquamarine;
-}
-.intro {
-  background: white;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.navtitle {
-  position: fixed;
-  width: 30%;
-  height: 100%;
-}
-.intro-header {
-  margin-top: 10%;
-}
-.content-section-c {
-  border-top: 1px solid #32465A;
-  border-bottom: 1px solid #32465A;
-  background-color: #34495e;
-  padding: 90px 0;
-}
-.h1_home {
-  font-size: 80px;
-  font-family: lato;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: black;
-}
-.h3_home {
-  font-family: lato;
-  font-weight: 300;
-  font-size: 24px;
-  letter-spacing: 2px;
-  color: #869690;
-}
-.thin_italic {
-  font-weight: 100;
-  letter-spacing: 6px;
-}
-.abcen {
-  margin-top: 20%;
-}
-.button_down {
-  display: none
-}
-.contain {
-  width: 35%;
-  text-align: center;
-}
-#progressBar {
-  position: fixed;
-  width: 100%;
-  height: 2%;
-  top: 0;
-  left: 0;
-  z-index: 5000;
-  -webkit-transition: 1s width, background-color 1s;
-  transition: 1s width, background-color 1s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.witty-text {
-  padding-top: 4%;
-  padding-bottom: 2%;
-  margin-left: 30%;
-  font-family: lato;
-  font-size: 5em;
-  font-weight: 700;
-  color: #4A4A4A;
-  /* letter-spacing: 8.61px; */
-  line-height: 85px;
-}
-.content-header {
-  position: absolute;
-  top: 10%;
-}
-.slide-container {
-  width: 50%;
-}
-#scrollmouse {
-  width: 3vw;
-}
-.resume {
-  margin-left: 50vw;
-  margin-top: 30px;
-}
-#resume-png {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  border-radius: 20px;
-}
-#resume-png:hover {
-  -webkit-transform: translate(-40px, -40px);
-  transform: translate(-40px, -40px);
-  box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
-  border-radius: 20px;
-}
-.content-text {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  margin-left: 30%;
-  padding-right: 3%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    /*  Navtext images for now*/
+    content: url(/assets/about.png) url(/assets/work.png) url(/assets/cv.png);
 }
 
-.vertical-center{
-  position: relative;
-  top: 50%;
-  transform: translateY(-80%);
+#sidebar {
+    position: fixed;
+    width: 5%;
+    height: 100%;
+    -webkit-transition: width 1s, background-color 1s;
+    transition: width 1s, background-color 1s;
+    background-color: #A9B7C0;
+    z-index: 5;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content {
+    border-style: dotted;
+    margin-left: 30.5%;
+}
+
+.aboutme {
+    background-color: aquamarine;
+}
+
+.intro {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navtitle {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+}
+
+.intro-header {
+    margin-top: 10%;
+}
+
+.content-section-c {
+    border-top: 1px solid #32465A;
+    border-bottom: 1px solid #32465A;
+    background-color: #34495e;
+    padding: 90px 0;
+}
+
+.h1_home {
+    font-size: 80px;
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.h3_home {
+    font-family: lato;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #869690;
+}
+
+.thin_italic {
+    font-weight: 100;
+    letter-spacing: 6px;
+}
+
+.abcen {
+    margin-top: 20%;
+}
+
+.button_down {
+    display: none
+}
+
+.contain {
+    width: 35%;
+    text-align: center;
+}
+
+#progressBar {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    -webkit-transition: 1s width, background-color 1s;
+    transition: 1s width, background-color 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.witty-text {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    font-family: lato;
+    font-size: 5em;
+    font-weight: 700;
+    color: #4A4A4A;
+    /* letter-spacing: 8.61px; */
+    line-height: 85px;
+}
+
+.content-header {
+    position: absolute;
+    top: 10%;
+}
+
+.slide-container {
+    width: 50%;
+}
+
+#scrollmouse {
+    width: 3vw;
+}
+
+.resume {
+    margin-left: 50vw;
+    margin-top: 30px;
+}
+
+#resume-png {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    border-radius: 20px;
+}
+
+#resume-png:hover {
+    -webkit-transform: translate(-40px, -40px);
+    transform: translate(-40px, -40px);
+    box-shadow: 27px 27px 0px 1px rgba(49, 50, 50, 0.24);
+    border-radius: 20px;
+}
+
+.content-text {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 30%;
+    padding-right: 3%;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
 }
 
 p {
-  padding: 0;
-  margin: 0;
-  font-family: lato;
-  font-size: 1.6em;
-  color: #4A4A4A;
-  line-height: inherit;
-  font-weight: 300;
+    padding: 0;
+    margin: 0;
+    font-family: lato;
+    font-size: 1.6em;
+    color: #4A4A4A;
+    line-height: inherit;
+    font-weight: 300;
 }
+
 .text-center {
-  text-align: center;
+    text-align: center;
 }
+
 #border {
-  border: 2px solid red;
+    border: 2px solid red;
 }
+
 .circular-logos {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
 }
+
 #bits-placeholder {
-  padding: 10vh 0 10vh 0;
+    padding: 10vh 0 10vh 0;
 }
+
 .work-pic {}
+
 .work-text {
-  margin: 1%;
-  margin-left: 60%;
-  /* NOTE: 50+(value)% for specifiying margin*/
-  font-size: 2em;
+    margin: 1%;
+    margin-left: 60%;
+    /* NOTE: 50+(value)% for specifiying margin*/
+    font-size: 2em;
 }
+
 #navtext {
-  visibility: hidden;
+    visibility: hidden;
+}
+
+
+/* Css for project grid view */
+
+#displaced-grid {
+    left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell {
+    margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    #displaced-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(33.3333% - 2rem);
+    }
 }
