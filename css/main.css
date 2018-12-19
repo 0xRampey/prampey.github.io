@@ -153,6 +153,22 @@ body::after {
     line-height: 85px;
 }
 
+.header-text {
+    font-family: lato;
+    font-size: 2em;
+    font-weight: 700;
+    color: #4A4A4A;
+    letter-spacing: 8.61px;
+}
+
+.subtitle-text {
+    font-family: lato;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: gray;
+    letter-spacing: 3px;
+}
+
 .content-header {
     position: absolute;
     top: 10%;
@@ -312,4 +328,23 @@ p {
 .overlay-effect:hover .overlay {
     opacity: 1;
     border-width: 1.5rem;
+}
+
+
+/* Center the text inside */
+
+.overlay-effect .overlay>div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-effect .overlay>div>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table>div {
+    display: table-cell;
+    vertical-align: middle;
 }
