@@ -277,3 +277,39 @@ p {
         width: calc(33.3333% - 2rem);
     }
 }
+
+.overlay-effect .overlay {
+    background: #fff;
+    border-style: solid;
+    border-width: 0;
+    opacity: 0;
+}
+
+.overlay-effect .overlay {
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.overlay-effect .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    opacity: 0;
+    padding: 20px;
+}
+
+.overlay-effect {
+    position: relative;
+}
+
+.overlay-effect:hover .overlay {
+    opacity: 1;
+    border-width: 1.5rem;
+}
