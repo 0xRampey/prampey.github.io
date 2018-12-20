@@ -646,8 +646,8 @@
                 slidesNavigation: true,
                 scrollOverflow: true,
                 // Convert slides to scrollable sections for mobiles and tablets
-                responsiveWidth: 800,
-                autoScrolling: true,
+                responsiveWidth: 0,
+                // Actually that doesn't look too good with scrollOverflow sections on mobile so we'll leave it at 0
                 onLeave: function(index, nextIndex, direction) {
                     var leavingSection = $(this);
 
