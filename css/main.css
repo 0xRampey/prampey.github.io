@@ -260,9 +260,10 @@ p {
     left: 25%;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
+    width: 75%;
 }
 
 .responsive-image {
