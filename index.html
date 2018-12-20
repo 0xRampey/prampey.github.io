@@ -519,8 +519,8 @@
             </div>
             <div id="displaced-grid">
                 <div class="cell overlay-effect">
-                    <img src="http://placehold.it/800x800" class="responsive-image">
-                    <div class="overlay" style="border-color: #f37550;">
+                    <img src="assets/PAL.png" class="responsive-image">
+                    <div class="overlay" style="border-color: #A9B7C0;">
                         <div class="table">
                             <div>
                                 <div class="child post-title">
@@ -535,7 +535,22 @@
                 </div>
                 <div class="cell overlay-effect">
                     <img src="http://placehold.it/800x800" class="responsive-image">
-                    <div class="overlay" style="border-color: #f37550;">
+                    <div class="overlay" style="border-color: #253640;">
+                        <div class="table">
+                            <div>
+                                <div class="child post-title">
+                                    <p class="header-text">PAL</p>
+                                </div>
+                                <div class="child categories">
+                                    <p class="post_categories subtitle-text">#ai</aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell overlay-effect">
+                    <img src="http://placehold.it/800x800" class="responsive-image">
+                    <div class="overlay" style="border-color: #737495;">
                         <div class="table">
                             <div>
                                 <div class="child post-title">
@@ -630,6 +645,8 @@
                 navigationPosition: 'left',
                 slidesNavigation: true,
                 scrollOverflow: true,
+                // Convert slides to scrollable sections for mobiles and tablets
+                responsiveWidth: 800,
                 autoScrolling: true,
                 onLeave: function(index, nextIndex, direction) {
                     var leavingSection = $(this);
