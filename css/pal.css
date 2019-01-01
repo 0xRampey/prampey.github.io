@@ -1,11 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
 .border {
     border: 0.8rem solid #A9B7C0;
 }
 
-.container {
+section {
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    article {
+        flex: 1;
+    }
 }
 
 .project-title {
@@ -102,20 +118,4 @@
 .responsive-image {
     max-width: 100%;
     margin-bottom: 2rem;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex-basis: 100%;
-}
-
-@media screen and (min-width: 800px) {
-    .column {
-        flex: 1;
-    }
 }
