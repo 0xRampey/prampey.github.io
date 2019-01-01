@@ -1,0 +1,95 @@
+.border {
+    border: 0.8rem solid #A9B7C0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.project-title {
+    display: block;
+    float: left;
+    padding-bottom: 4rem;
+}
+
+.project-title {
+    font-family: lato;
+    font-size: 5em;
+    font-weight: 700;
+    color: #4A4A4A;
+    /* letter-spacing: 8.61px; */
+    line-height: 85px;
+}
+
+.content {
+    font-family: lato;
+    font-size: 1.3em;
+    color: #4A4A4A;
+    line-height: inherit;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.table {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-block {
+    display: flex;
+    border-bottom: 1px solid #111010;
+    padding: 30px 0 10px;
+}
+
+.table .header {
+    font-family: lato;
+    font-size: 1.3em;
+    color: #4A4A4A;
+    line-height: inherit;
+    font-weight: 600;
+    border-bottom: 2px solid #111010;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.5rem;
+    display: block;
+}
+
+.item-block .title {
+    width: 30%;
+    font-family: lato;
+    font-size: 1.3em;
+    color: #4A4A4A;
+    line-height: inherit;
+    font-weight: 100;
+}
+
+.item-block .value {
+    width: 70%;
+    font-family: lato;
+    font-size: 1.3em;
+    color: #4A4A4A;
+    line-height: inherit;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+    .table-section .table {
+        position: relative;
+        width: 47%;
+    }
+    .table-section .content {
+        position: relative;
+        width: 47%;
+    }
+}
