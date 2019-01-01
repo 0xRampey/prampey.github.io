@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .item-block {
@@ -83,6 +83,10 @@
     font-weight: 400;
 }
 
+.table-section {
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 800px) {
     .table-section .table {
         position: relative;
@@ -91,5 +95,75 @@
     .table-section .content {
         position: relative;
         width: 47%;
+    }
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell {
+    margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .cell {
+        width: calc(50% - 2rem);
+    }
+    .section {
+        justify-content: space-between;
+    }
+}
+
+
+/* @media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(33.3333% - 2rem);
+    }
+    .section {
+        justify-content: space-between;
+    }
+} */
+
+
+/* Test code for custom grid */
+
+.row::before,
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .one {
+        width: 100%;
+    }
+    .half {
+        width: calc(100% / 2);
+    }
+    .one-third {
+        width: calc(100% / 3);
+    }
+    .one-fourth {
+        width: calc(100% / 4);
+    }
+    .two-thirds {
+        width: calc(100% / 3 * 2);
+    }
+    .column {
+        float: left;
     }
 }
