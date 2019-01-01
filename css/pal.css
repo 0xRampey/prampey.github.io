@@ -29,22 +29,33 @@
     color: #4A4A4A;
     line-height: inherit;
     font-weight: 300;
-    position: relative;
-    width: 100%;
     margin-bottom: 2rem;
 }
 
 .table {
-    position: relative;
-    width: 100%;
     margin-bottom: 2rem;
 }
 
-.section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@media screen and (min-width: 800px) {
+    .content {
+        padding-right: 1rem;
+    }
+    .table {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    /* Percentage width values */
+    ._47 {
+        flex: 4.7;
+    }
+    ._55 {
+        flex: 5.5;
+    }
+    ._20 {
+        flex: 2;
+    }
 }
 
 .item-block {
@@ -88,88 +99,23 @@
     font-weight: 400;
 }
 
-.table-section {
-    justify-content: space-between;
-}
-
-@media screen and (min-width: 800px) {
-    .table-section .table {
-        position: relative;
-        width: 47%;
-    }
-    .table-section .content {
-        position: relative;
-        width: 47%;
-    }
-}
-
 .responsive-image {
     max-width: 100%;
     margin-bottom: 2rem;
 }
 
-.cell img {
-    display: block;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.cell {
-    margin: 1rem;
+.column {
+    flex-basis: 100%;
 }
 
-@media screen and (min-width: 600px) {
-    .cell {
-        width: calc(50% - 2rem);
-    }
-    .section {
-        justify-content: space-between;
-    }
-}
-
-
-/* @media screen and (min-width: 1000px) {
-    .cell {
-        width: calc(33.3333% - 2rem);
-    }
-    .section {
-        justify-content: space-between;
-    }
-} */
-
-
-/* Test code for custom grid */
-
-.row::before,
-.row::after {
-    display: table;
-    content: " ";
-    clear: both;
-}
-
-.one,
-.one-third,
-.two-thirds,
-.one-fourth,
-.half {
-    width: 100%;
-}
-
-@media only screen and (min-width: 800px) {
-    .one {
-        width: 100%;
-    }
-    .half {
-        width: calc(100% / 2);
-    }
-    .one-third {
-        width: calc(100% / 3);
-    }
-    .one-fourth {
-        width: calc(100% / 4);
-    }
-    .two-thirds {
-        width: calc(100% / 3 * 2);
-    }
+@media screen and (min-width: 800px) {
     .column {
-        float: left;
+        flex: 1;
     }
 }
