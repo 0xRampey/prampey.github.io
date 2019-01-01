@@ -24,8 +24,8 @@
 }
 
 .content {
-    font-family: lato;
-    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
     color: #4A4A4A;
     line-height: inherit;
     font-weight: 300;
@@ -51,6 +51,11 @@
     display: flex;
     border-bottom: 1px solid #111010;
     padding: 30px 0 10px;
+}
+
+.gutterless {
+    margin-left: -2rem;
+    margin-right: -2rem;
 }
 
 .table .header {
@@ -100,6 +105,7 @@
 
 .responsive-image {
     max-width: 100%;
+    margin-bottom: 2rem;
 }
 
 .cell img {
