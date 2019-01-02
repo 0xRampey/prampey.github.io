@@ -24,6 +24,10 @@ article {
     }
 }
 
+.unresponsive {
+    flex: 1;
+}
+
 .project-title {
     display: block;
     float: left;
