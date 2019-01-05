@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UAV Flight Planning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: Find a way to cache fonts from Google as they are resource heavy -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/project.css" />
+</head>
+
+<body style="margin: 0;">
+<main class="border" style="border-color: #737495;">
+        <section>
+            <article class="unresponsive">
+                <div class="project-title">
+                    UAV Flight Mission Planning
+                </div>
+
+            </article>
+            <article class="unresponsive">
+                <a href="/#work">
+                    <img style="width: 4rem; float: right;" src="assets/clear.svg">
+                </a>
+
+            </article>
+        </section>
+
+
+        <section>
+            <article class="content">
+                <span class="header"> PROBLEM STATEMENT </span>
+                <br>
+                Path planning has been an important topic of research in many areas including robotics and navigation. It 
+                provides the agent with a collision-free and optimised route through space. 
+                Here, we address path planning in the context of <i>Unmanned Aerial Vehicles</i> where it is used for flight 
+                navigation to avoid potential weather hazards, radar detection and sudden threats.
+            </article>
+            <!-- TODO: Make this table mobile-responsive -->
+            <article class="table">
+                <span class="header">PROJECT DETAILS</span>
+                <div>
+                    <div class="item-block">
+                        <span class="title">Year</span>
+                        <span class="value">June 2017 - July 2017</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-block">
+                        <span class="title">Scope</span>
+                        <span class="value">AI, Simulation, Image processing</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-block">
+                        <span class="title">Organization</span>
+                        <span class="value"><a href="https://www.drdo.gov.in" class="style-link">Defence Research and Development Organisation</a></span>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </article>
+        </section>
+        <!-- Let the following section touch the viewport borders
+        so that the images look bigger and better -->
+        <!-- <div class="cell">
+                <img src="assets/PAL.png" class="responsive-image">
+            </div> -->
+        <section class="gutterless">
+            <article class="center">
+                <img src="assets/radar_map.png" class="responsive-image"></iframe>
+            </article>
+        </section>
+
+<section class="gutterless">
+    <article>
+        <img src="assets/radar_highlight.png" class="responsive-image">
+    </article>
+    <!-- TODO: Let there be some space between the 2 images -->
+    <article>
+        <img src="assets/radar_path.png" class="responsive-image">
+    </article>
+</section>
+        <!-- TODO: Since the content is arranged in a story format. Animations can bring them in
+        sequentially. -->
+        <section>
+            <article class="content">
+                <span class="header">SOLUTION</span>
+                <br>
+                UAV Flight Mission Planning presents an application that simulates scenarios that employs global 3D maps, weather conditions and intelligence data. This
+                is used in developing UAV navigation trajectories while optimising for fuel and leg times and geodetic positioning of enemy radars.
+
+            </article>
+<article class="content">
+    <span class="header">IMPLEMENTATION</span>
+    <br>
+    This application includes Systems Toolkit (visual software tool) to simulate and depict mission plans in a realistic environment. 
+    It also includes MATLAB scripts to automate the computations associated with mission planning. MATLAB was used because it allows 
+    us to easily carry out and visualize computations. The A* algorithm is used to optimize the mission route by generating the shortest
+    path through a set of enemy radar sites of known location. It also provides an intuitive way to account for storm patches, weather conditions and fuel constraints by using heuristics.
+</article>
+        </section>
+
+        <section class="gutterless">
+    <article class="center">
+        <img src="assets/simulation.png" class="responsive-image">
+    </article>
+    <!-- TODO: Let there be some space between the 2 images -->
+    
+</section>
+<section class="gutterless">
+<article class="center">
+    <img src="assets/path_highlight.png" class="responsive-image">
+</article>
+<!-- TODO: Let there be some space between the 2 images -->
+
+</section>
+
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
