@@ -101,7 +101,7 @@ section .center {
     margin-right: -2rem;
 }
 
-.table .header {
+.header {
     font-family: lato;
     font-size: 1.3em;
     color: #4A4A4A;
