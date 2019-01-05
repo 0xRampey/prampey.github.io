@@ -15,13 +15,17 @@ section {
 }
 
 article {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
 }
 
 @media screen and (min-width: 800px) {
     article {
         flex: 1;
     }
+}
+
+section .center {
+    text-align: center;
 }
 
 .unresponsive {
@@ -50,6 +54,14 @@ article {
     line-height: inherit;
     font-weight: 300;
     margin-bottom: 2rem;
+}
+
+.content .bold {
+    font-weight: 600;
+}
+
+.content .italic {
+    font-style: italic;
 }
 
 .table {
@@ -111,7 +123,7 @@ article {
 }
 
 .item-block .value {
-    width: 70%;
+    /* width: 70%; */
     font-family: lato;
     font-size: 1.3em;
     color: #4A4A4A;
@@ -122,4 +134,8 @@ article {
 .responsive-image {
     max-width: 100%;
     margin-bottom: 2rem;
+}
+
+.style-link {
+    color: grey;
 }
