@@ -21,6 +21,8 @@ article {
 @media screen and (min-width: 800px) {
     article {
         flex: 1;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
