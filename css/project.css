@@ -50,11 +50,11 @@ section .center {
 }
 
 .content {
-    font-family: 'Montserrat', sans-serif;
+    font-family: lato, sans-serif;
     font-size: 1.2em;
     color: #4A4A4A;
     line-height: inherit;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
@@ -121,7 +121,7 @@ section .center {
     font-size: 1.3em;
     color: #4A4A4A;
     line-height: inherit;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .item-block .value {
