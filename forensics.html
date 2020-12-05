@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- TODO: Have a references section TODO: Add metadata evidence that its photoshopped TODO: Add bollywood faked images -->
 
   <head>
     <meta charset="utf-8"/>
@@ -60,11 +61,12 @@
         </article>
       </section>
       <!-- Let the following section touch the viewport borders so that the images look bigger and better -->
-      <!-- <div class="cell"> <img src="assets/PAL.png" class="responsive-image"> </div> -->
       <section class="gutterless">
         <!-- # TODO: Make responsive -->
         <article>
-            <span class="header"> Digital Media </span>
+          <span class="header">
+            Digital Media - Case 1
+          </span>
           <img src="assets/bush.jpg" style='width: 25%;' class="responsive-image">
 
           <img src="assets/gore-map.png" style='width: 65%;' class="responsive-image">
@@ -98,83 +100,104 @@
         </span>
         <br>
 
-        <!-- <ul>
-          <li>
-            To overcome the low compute I employed special USB-type Neural Accelerators to run the machine learning and designed my Neural Network models to be smaller and run faster. I was able to achieve
-            <span class="bold">
-              real-time, offline and on-device face recognition
-            </span>
-            on the wearable system.
-          </li>
-          <li>
-            I devised a
-            <i>one-shot</i>
-            machine learning technique to easily onboard new user faces with just a single picture without retraining the whole model every time. Onboarding now takes about
-            <span class="bold">
-              2 seconds on an offline, low-power embedded device.</span>
-          </li>
-        </ul>
-        This now allows the wearable to provide real-time memory assistance
-        <span class="bold">
-          (Memory Augmentation)
-        </span>
-        using personalized face recognition to recognize and remind people of persons in their social circle. -->
+        <!-- <ul> <li> To overcome the low compute I employed special USB-type Neural Accelerators to run the machine learning and designed my Neural Network models to be smaller and run faster. I was able to achieve <span class="bold"> real-time, offline and on-device face recognition </span> on the wearable system. </li> <li> I devised a <i>one-shot</i> machine learning technique to easily onboard new user faces with just a single picture without retraining the whole model every time. Onboarding now takes about <span class="bold"> 2 seconds on an offline, low-power embedded device.</span> </li> </ul> This now allows the wearable to provide real-time memory assistance <span class="bold"> (Memory Augmentation) </span> using personalized face recognition to recognize and remind people of persons in their social circle. -->
       </article>
     </section>
 
-    <!-- <section class="gutterless">
-      <article class="center">
-        <img src="assets/face_rec.png" class="responsive-image">
+    <section class="gutterless">
+      <!-- # TODO: Make responsive -->
+      <article>
+        <span class="header">
+          Case 2
+        </span>
+        <img src="assets/fake-flag-original.jpeg" style='width: 25%;' class="responsive-image">
+
+        <img src="assets/fake-flag-map.jpg" style='width: 70%;' class="responsive-image">
+
       </article>
     </section>
+
     <section class="content">
       <article>
-        I was also in charge of the
-        <span class="bold">
-          software pipelining
-        </span>
-        in the PAL project.
+        A Facebook post with a doctored photograph claimed that a BJP spokesperson Sambit Patra prostrated himself on the Pakistani national flag. The photo was posted on a page with a large following and expectedly, went viral. The image was confirmed to be manipulated by a fact-checking organisation, AFP. The original version did not contain a Pakistani flag. More info on that
+        <a href='https://factcheck.afp.com/no-not-real-photo-politician-indias-ruling-party-prostrating-himself-pakistans-national-flag'>
+          here.
+        </a>
         <br>
-        I built a modular wearable architecture called
-        <span class="bold">PiWear</span>
-        which allows for rapid-prototyping of wearable experiments involving data collection, processing, and machine learning. I designed it to be
-        <span class="bold">
-          highly modular
+        <br>
+
+        On the far left, you can see the
+        <span class='bold'>
+          original
         </span>
-        so that researchers after me can easily add or remove modules to suit their experiment setting. PiWear is currently being used in the PAL project for Memory augmentation, Language Learning and Activity recognition. I also led the software team with an iterative process of development, deploy, and feedback which allowed us to demo fully functional prototypes of Memory Augmentation and Language Learning to Bose and Members' week.
+        image
+        <a href='https://twitter.com/sambitswaraj/status/1114875819078250496'>
+          posted
+        </a>
+        by Mr. Sambit on Twitter. Next to it is the
+        <span class='bold'>
+          Photoshopped image.
+        </span>
+        The heatmap while present at the tampered region, is not too significant.
+        <br>
+        The doctored image I had access to was of low resolution and it gets progressively harder to find pixel-level anomalies in images where information is lost through compression. However, the strength of forensics lies in the multiples perspectives available to us when evaluating an image. Below we use 2 completely different approaches to further strengthten our claim that this image is indeed photoshopped.
       </article>
     </section>
+
     <section class="gutterless">
-      <article class="center">
-        <img src="assets/ll.png" class="responsive-image">
+      <article>
+        <img src="assets/photoshop-traces.jpg" class="responsive-image">
+
       </article>
-      <article class="center">
-        <img src="assets/obj_detect.png" class="responsive-image">
+      <article>
+        <img src="assets/fake-flag-noiseprint-map.jpg" class="responsive-image">
+
       </article>
+
     </section>
+
     <section class="content">
       <article>
-        I also designed
-        <span class="bold">superfast and offline object recognition</span>
-        for the wearable device. I was able to achieve a frame rate of 9 fps. This enables the wearable to use real-time object detection to enable contextual
-        <i>Language Learning
-        </i>
-        in the real world so that the users can learn new languages in a mobile and contextual setting.
+        On the right is a heatmap generated from a neural network model
+        called 
+        <a href='https://arxiv.org/abs/1808.08396'> Noiseprint. </a> 
+        It works on the premise that photographs contain noise that is 
+        specififc to the camera model which took them. So every photo
+        contains the unique signature of the camera that took it. 
+        Noiseprint is trained to
+        recognize signatures from different cameras and detect inconsistencies
+        in the signature across an image.
+        <br>
+        In this map, we can see a distinct blue patch which has a completely 
+        different camera signature from the rest of the redder locations. 
+        This implies that the patch comes from 
+        a different camera hardware and has mostly been spliced onto this photo.
         <br>
         <br>
-        I am also working on a novel
-        <span class="bold">Activity Recognition classifier</span>
-        that works in a way similar to how humans classify their own activities. Activity recognition can be used by the wearable to keep track of a person's daily activities in order to frame effective interventions or record important attributes like
-        <span class="bold">sleep, productivity and exercise time
+        On the left is a dump of the
+        <span class='bold'>
+          JPEG header
         </span>
-        to gain a better insight into the user's mental and physical state and thereby, advance general well being and increase self-awareness.
+        information taken from the above doctored photo.
+        <br>
+        Popular photo-editing softwares like Photoshop embed non-graphic information
+        into the metadata of JPEG images. Photoshop in particular uses IPTC format to
+        to embed data about asset layers, paths etc.
+        <br> 
+        As can be seen in the image, the marker called 'APP13' 
+        is used in JPEG images to designate a Photoshop Image Resource (PSIR).
+        The presence of this marker indicates that Photoshop embedded this 
+        information here and implies that this image 
+        went through a Photoshop workflow. More on this
+        <a href='https://exiftool.org/TagNames/Photoshop.html'> here. </a>
+        <br><br>
+        These 3 pieces of evidence suggest a strong case of photo manipulation
+        on their own and these methods can be comined to 
+        automate for a large number of images.  
       </article>
     </section>
-    <section class="gutterless">
-      <article class="center">
-        <img src="assets/activity_rec.png" class="responsive-image">
-      </article>
-    </section> -->
+
+    <!-- <section class="gutterless"> <article class="center"> <img src="assets/face_rec.png" class="responsive-image"> </article> </section> <section class="content"> <article> I was also in charge of the <span class="bold"> software pipelining </span> in the PAL project. <br> I built a modular wearable architecture called <span class="bold">PiWear</span> which allows for rapid-prototyping of wearable experiments involving data collection, processing, and machine learning. I designed it to be <span class="bold"> highly modular </span> so that researchers after me can easily add or remove modules to suit their experiment setting. PiWear is currently being used in the PAL project for Memory augmentation, Language Learning and Activity recognition. I also led the software team with an iterative process of development, deploy, and feedback which allowed us to demo fully functional prototypes of Memory Augmentation and Language Learning to Bose and Members' week. </article> </section> <section class="gutterless"> <article class="center"> <img src="assets/ll.png" class="responsive-image"> </article> <article class="center"> <img src="assets/obj_detect.png" class="responsive-image"> </article> </section> <section class="content"> <article> I also designed <span class="bold">superfast and offline object recognition</span> for the wearable device. I was able to achieve a frame rate of 9 fps. This enables the wearable to use real-time object detection to enable contextual <i>Language Learning </i> in the real world so that the users can learn new languages in a mobile and contextual setting. <br> <br> I am also working on a novel <span class="bold">Activity Recognition classifier</span> that works in a way similar to how humans classify their own activities. Activity recognition can be used by the wearable to keep track of a person's daily activities in order to frame effective interventions or record important attributes like <span class="bold">sleep, productivity and exercise time </span> to gain a better insight into the user's mental and physical state and thereby, advance general well being and increase self-awareness. </article> </section> <section class="gutterless"> <article class="center"> <img src="assets/activity_rec.png" class="responsive-image"> </article> </section> -->
 
     <!-- TODO: Add more pictures -->
     <!-- TODO: Add masonryjs for perfect grid pictures -->
